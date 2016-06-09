@@ -1,0 +1,62 @@
+<style>
+  .float-button {
+    bottom: 15px;
+    position: fixed;
+    margin-left: 83%;
+  }
+</style>
+<table id="mdl-table" width="100%" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric medium-width">Paciente</th>
+      <th class="mdl-data-table__cell--non-numeric">Proxima Cita</th>
+      <th class="mdl-data-table__cell--non-numeric">Diagnóstico</th>
+      <th class="mdl-data-table__cell--non-numeric">Par Biomagnético</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Víctor Vázquez</td>
+      <td class="mdl-data-table__cell--non-numeric">10/05/2016</td>
+      <td class="mdl-data-table__cell--non-numeric">Gripe </td>
+      <td class="mdl-data-table__cell--non-numeric">Laminate </td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">José Martínez</td>
+      <td class="mdl-data-table__cell--non-numeric">14/06/2016</td>
+      <td class="mdl-data-table__cell--non-numeric">Fiebre </td>
+      <td class="mdl-data-table__cell--non-numeric">Laminate </td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Marcos Proscuito</td>
+      <td class="mdl-data-table__cell--non-numeric">18/12/2016</td>
+      <td class="mdl-data-table__cell--non-numeric">Hambre </td>
+      <td class="mdl-data-table__cell--non-numeric">Laminate </td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">María Morales</td>
+      <td class="mdl-data-table__cell--non-numeric">10/05/2016</td>
+      <td class="mdl-data-table__cell--non-numeric">Gripe </td>
+      <td class="mdl-data-table__cell--non-numeric">Laminate </td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Melissa Puón</td>
+      <td class="mdl-data-table__cell--non-numeric">10/05/2016</td>
+      <td class="mdl-data-table__cell--non-numeric">Gripe </td>
+      <td class="mdl-data-table__cell--non-numeric">Laminate </td>
+    </tr>
+  </tbody>
+</table>
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored float-button" data-toggle="modal" data-target="#appModal">
+  <i class="material-icons">add</i>
+</button>
+<script>
+  $(document).ready(function(){
+    $('#mdl-table').DataTable({
+        responsive: true,
+        "bLengthChange": false, 
+        bFilter: false,
+        bInfo: false
+    });
+});
+</script>
